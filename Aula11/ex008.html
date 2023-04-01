@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de cidadania</title>
+</head>
+<body>
+    <h1>Teste de Cidadania</h1>
+    <p>Onde você mora: <input type="text" name="place" id="place"></p>
+    <p><input type="button" value="Checar" onclick="checar()"></p>
+    <span id="res">Resultado...</span>
+    <script>
+        function checar() {
+            var country = document.querySelector('#place');
+            var res = document.querySelector('#res');
+            if (country.value == 'Brasil' ||  country.value == 'Brazil') {
+                res.innerHTML = 'Você mora no Brasil.';
+            } else {
+                res.innerHTML = 'Você mora em País estrangeiro.';
+            }
+        }
+    </script>
+</body>
+</html>

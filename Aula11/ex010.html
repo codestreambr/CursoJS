@@ -7,6 +7,21 @@
   <title>Teste de condições</title>
 </head>
 <body>
-   <h1>Teste de condicionais simples</h1>
-</body>
+    <h1>Sistema de Multas</h1>
+    Velocidade: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="submit" value="Verificar" onclick="calcular()">
+    <div id="res">Resultado</div>
+    <script>
+        function calcular() {
+          var vel = document.querySelector('#txtvel');
+          var res = document.querySelector('#res');
+          result = Number(vel.value);
+          res.innerHTML = `<p>Sua velocidade atual é: <strong>${result} Km/h</p>`;
+            if (result > 60) {
+              res.innerHTML += `<p>Você foi <strong>MULTADO</strong> por excesso da velocidade permitida.`;
+            }
+          res.innerHTML += `<p>Use sempre cinto de segurança.`;
+        }
+    </script>
+  </body>
 </html>
