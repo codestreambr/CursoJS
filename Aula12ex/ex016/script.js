@@ -9,7 +9,14 @@ function contar() {
   var final = Number(fim.value);
   var step = Number(passos.value);
 
-  for (cont;  cont <= final; cont += step) {
-    res.innerHTML += `${cont} `;
+  if (cont < final) {
+      for (cont;  cont <= final; cont += step) {
+      res.innerHTML += `${cont} \u{1F449} `;
+      }
+  } else {
+    for (cont;  cont >= final; cont -= step) {
+      res.innerHTML += `${cont} \u{1F449} `;
+    }
   }
+      res.innerHTML += `${cont} \u{1F3C1} `
 }
