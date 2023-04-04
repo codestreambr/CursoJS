@@ -8,15 +8,21 @@ function contar() {
   var cont = Number(inicio.value);
   var final = Number(fim.value);
   var step = Number(passos.value);
-
-  if (cont < final) {
+  
+  if (cont.lenght == 0 || final.lenght == 0 || step.length == 0) {
+    alert('Todos os campos devem ser preenchidos.')
+  }
+  else {
+    if (cont < final) {
       for (cont;  cont <= final; cont += step) {
       res.innerHTML += `${cont} \u{1F449} `;
-      }
-  } else {
+    }
+  } 
+  else {
     for (cont;  cont >= final; cont -= step) {
       res.innerHTML += `${cont} \u{1F449} `;
     }
   }
-      res.innerHTML += `${cont} \u{1F3C1} `
+  }
+      res.innerHTML += `\u{1F3C1}`;
 }
