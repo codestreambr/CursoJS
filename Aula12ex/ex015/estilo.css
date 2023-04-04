@@ -1,0 +1,26 @@
+@chartset "UTF-8";
+
+body {
+  background: rgb(154, 154, 255);
+  font: normal 12pt Arial;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.582);
+  margin: auto;
+  padding: 15px;
+  width: 500px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  text-decoration: italic;
+}

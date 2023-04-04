@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Exercícios JavaScript</title>
+</head>
+<body>
+  <header>
+    <h1>Contador de Passos</h1>
+  </header>
+  <section>
+    <div>
+      <p>
+      <label for="inicio">Início do contador:</label>
+      <input type="number" name="inicio" id="inicio">
+      </p>
+      <p>
+        <label for="fim">Fim do contador:</label>
+        <input type="number" name="fim" id="fim">
+      </p>
+      <p>
+        <label for="passos">Passos do contador:</label>
+        <input type="number" name="passos" id="passos">
+      </p>
+      <p>
+      <button id="button" onclick="contar()" name="contar" id="contar">Contar</button>     
+      </p>
+    </div>
+    <div id="result">
+      Resultado...
+    </div>
+  </section>
+  <footer>
+    &copy; Curso em Vídeo.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

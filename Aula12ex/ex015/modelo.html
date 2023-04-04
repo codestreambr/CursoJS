@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Exercícios JavaScript</title>
+</head>
+<body>
+  <header>
+    <h1>Calculando idade de gêneros</h1>
+  </header>
+  <section>
+    <div>
+        <p>
+          <label for="ano">Ano de nascimento:</label>
+          <input type="number" name="ano" id="ano">
+        </p>
+        <p>
+          <label for="sex">Sexo:</label>
+          <input type="radio" name="sex" id="mas" checked>Masculino
+          <input type="radio" name="sex" id="fem">Feminino
+        </p>
+        <p>
+          <button onclick="verificar()">Verificar</button>
+        </p>
+    </div>
+    <div id="res">
+        <p>Aqui será exibido o resultado da pesquisa e o cálculo realizado.</p>
+    </div>
+  </section>
+  <footer>
+    &copy; Curso em Vídeo.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
